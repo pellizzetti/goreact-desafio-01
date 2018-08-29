@@ -3,6 +3,8 @@
 import Header from './components/Header';
 import Post from './components/Post';
 
+import './style.scss';
+
 class App extends Component {
   state = {
     posts: [
@@ -36,7 +38,7 @@ class App extends Component {
     return (
       <Fragment>
         <Header />
-        <div id="posts">
+        <div id="posts-container">
           {posts.map(post => (
             <Post key={post.id} data={post} />
           ))}

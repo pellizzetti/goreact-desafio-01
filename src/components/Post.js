@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import PostHeader from './PostHeader';
 
 const Post = ({ data }) => (
-  <div>
+  <div className="post">
     <PostHeader
       picture={data.picture}
       fullname={data.fullname}

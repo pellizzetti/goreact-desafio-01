@@ -1,14 +1,14 @@
-﻿import React from 'react';
+﻿import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 
 const PostHeader = ({ picture, fullname, since }) => (
-  <div>
+  <Fragment>
     <img alt="Foto do perfil do usuário" src={picture} />
     <div>
-      <p>{fullname}</p>
-      <p>{`há ${since}`}</p>
+      <p className="fullName">{fullname}</p>
+      <p className="since">{`há ${since}`}</p>
     </div>
-  </div>
+  </Fragment>
 );
 
 PostHeader.propTypes = {
