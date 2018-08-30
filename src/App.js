@@ -34,7 +34,7 @@ class App extends Component {
 
   render() {
     const { posts } = this.state;
-    console.log(posts);
+
     return (
       <Fragment>
         <Header />
@@ -42,6 +42,7 @@ class App extends Component {
           {posts.map(post => (
             <Post key={post.id} data={post} />
           ))}
+          <Post />
         </div>
       </Fragment>
     );
